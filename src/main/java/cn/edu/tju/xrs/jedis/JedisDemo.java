@@ -41,8 +41,8 @@ public class JedisDemo {
             //通过连接池获得连接
             jedis = jedisPool.getResource();
             //设置数据
-            jedis.set("wife2","estelle");
-            String w = jedis.get("wife2");
+            //jedis.set("country","中国");
+            String w = jedis.get("country");
             System.out.println(w);
         }catch (Exception e){
 
